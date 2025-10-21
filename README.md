@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+💰 Crypto Market Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sleek and responsive web application built with React that fetches and displays real-time cryptocurrency data, including price, 24h change, and market capitalization, with a quick search functionality.
 
-## Available Scripts
+✨ Features
 
-In the project directory, you can run:
+Real-Time Data: Fetches up-to-date market data for the top 100 cryptocurrencies using the CoinGecko API.
 
-### `npm start`
+Search Functionality: Allows users to filter coins instantly by name using a dynamic search input.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Price Change Indicator: Clearly displays 24-hour price changes with color-coded indicators (green for positive, red for negative).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clean UI: Simple and organized table-like layout for easy reading of key metrics.
 
-### `npm test`
+Modular Architecture: Built using React components (Landing, Coin, Loader) and CSS Modules for maintainable and scalable code.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ Technologies Used
 
-### `npm run build`
+React: Frontend library for building the user interface.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Axios: Promise-based HTTP client for fetching data from the API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+CoinGecko API: The data source for cryptocurrency market information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CSS Modules: For component-specific styling, preventing global style conflicts.
 
-### `npm run eject`
+🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Follow these steps to get your local copy of the project up and running.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+You must have Node.js and npm (or yarn) installed on your machine.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Installation
 
-## Learn More
+Clone the repository:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
+cd YOUR_REPO_NAME
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm install
+# or
+yarn install
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Run the development server:
 
-### Making a Progressive Web App
+npm start
+# or
+yarn start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+The application will open automatically in your browser at http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📂 Project Structure
 
-### Deployment
+The project follows a component-based structure typical of a Create React App setup:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+.
+├── src/
+│   ├── Components/
+│   │   ├── Coin.js         # Renders individual coin data
+│   │   ├── Coin.module.css # Styles for Coin
+│   │   ├── Landing.js      # Main page component (API calls, state, search)
+│   │   ├── Landing.module.css # Styles for Landing
+│   │   └── Loader.js       # Loading spinner
+│   ├── Services/
+│   │   └── Api.js          # Handles data fetching logic (Axios/CoinGecko)
+│   ├── App.js              # Root component
+│   └── index.js            # Entry point
+└── ...
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🤝 Contribution
+
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
+
+📄 License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details.
