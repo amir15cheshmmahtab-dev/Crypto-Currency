@@ -1,84 +1,69 @@
-💰 Crypto Market Tracker
+# 💰 Crypto Market Tracker
 
-A sleek and responsive web application built with React that fetches and displays real-time cryptocurrency data, including price, 24h change, and market capitalization, with a quick search functionality.
+A sleek and responsive web application built with **React** that fetches and displays real-time cryptocurrency data, including price, 24h change, and market capitalization, with a quick search functionality.
 
-✨ Features
+---
 
-Real-Time Data: Fetches up-to-date market data for the top 100 cryptocurrencies using the CoinGecko API.
+## ✨ Features
 
-Search Functionality: Allows users to filter coins instantly by name using a dynamic search input.
+- **Real-Time Data:** Fetches up-to-date market data for the top 100 cryptocurrencies using the CoinGecko API.  
+- **Search Functionality:** Allows users to filter coins instantly by name using a dynamic search input.  
+- **Price Change Indicator:** Clearly displays 24-hour price changes with color-coded indicators (green for positive, red for negative).  
+- **Clean UI:** Simple and organized table-like layout for easy reading of key metrics.  
+- **Modular Architecture:** Built using React components (`Landing`, `Coin`, `Loader`) and CSS Modules for maintainable and scalable code.
 
-Price Change Indicator: Clearly displays 24-hour price changes with color-coded indicators (green for positive, red for negative).
+---
 
-Clean UI: Simple and organized table-like layout for easy reading of key metrics.
+## 🛠️ Technologies Used
 
-Modular Architecture: Built using React components (Landing, Coin, Loader) and CSS Modules for maintainable and scalable code.
+- **React:** Frontend library for building the user interface.  
+- **Axios:** Promise-based HTTP client for fetching data from the API.  
+- **CoinGecko API:** The data source for cryptocurrency market information.  
+- **CSS Modules:** For component-specific styling, preventing global style conflicts.
 
-🛠️ Technologies Used
+---
 
-React: Frontend library for building the user interface.
-
-Axios: Promise-based HTTP client for fetching data from the API.
-
-CoinGecko API: The data source for cryptocurrency market information.
-
-CSS Modules: For component-specific styling, preventing global style conflicts.
-
-🚀 Getting Started
+## 🚀 Getting Started
 
 Follow these steps to get your local copy of the project up and running.
 
-Prerequisites
+### Prerequisites
 
-You must have Node.js and npm (or yarn) installed on your machine.
+You must have **Node.js** and **npm** (or **yarn**) installed on your machine.
 
-Installation
+### Installation
 
 Clone the repository:
 
-git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-cd YOUR_REPO_NAME
-
-
-Install dependencies:
+```bash
+### Install dependencies
 
 npm install
 # or
 yarn install
 
-
-Run the development server:
+###Run the development server
 
 npm start
 # or
 yarn start
 
-
-The application will open automatically in your browser at http://localhost:3000.
-
-📂 Project Structure
-
-The project follows a component-based structure typical of a Create React App setup:
-
+##📂 Project Structure
 .
 ├── src/
 │   ├── Components/
-│   │   ├── Coin.js         # Renders individual coin data
-│   │   ├── Coin.module.css # Styles for Coin
-│   │   ├── Landing.js      # Main page component (API calls, state, search)
-│   │   ├── Landing.module.css # Styles for Landing
-│   │   └── Loader.js       # Loading spinner
+│   │   ├── Coin.js              # Renders individual coin data
+│   │   ├── Coin.module.css      # Styles for Coin
+│   │   ├── Landing.js           # Main page component (API calls, state, search)
+│   │   ├── Landing.module.css   # Styles for Landing
+│   │   └── Loader.js            # Loading spinner
 │   ├── Services/
-│   │   └── Api.js          # Handles data fetching logic (Axios/CoinGecko)
-│   ├── App.js              # Root component
-│   └── index.js            # Entry point
+│   │   └── Api.js               # Handles data fetching logic (Axios/CoinGecko)
+│   ├── App.js                   # Root component
+│   └── index.js                 # Entry point
 └── ...
 
 
-🤝 Contribution
 
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
-📄 License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details.
